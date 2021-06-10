@@ -1,5 +1,5 @@
-/*6. Elabore um programa que identifique o número de algarismos de um valor inteiro positivo informado
-pelo usuário.*/
+/*6. Elabore um programa que identifique o nÃºmero de algarismos de um valor inteiro positivo informado
+pelo usuÃ¡rio.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -14,12 +14,12 @@ int main(){
 	
 	do{
 		do{
-			printf("Digite um número inteiro positivo, que gostaria de saber quantos algarismos possuem:");
+			printf("Digite um nÃºmero inteiro positivo, que gostaria de saber quantos algarismos possuem:");
 			scanf("%s", &numeroDigitado);
 			fflush(stdin);
 	
 			if(numeroDigitado<=0)
-				printf("Apenas números inteiros positivos!\n");
+				printf("Apenas nÃºmeros inteiros positivos!\n");
 				
 			system("cls");	
 
@@ -29,10 +29,10 @@ int main(){
 	
 		system("cls");
 	
-		printf("O número escolhido foi %s.\n", numeroDigitado);
+		printf("O nÃºmero escolhido foi %s.\n", numeroDigitado);
 		printf("\nPossue %d algarismos.\n", tamanho);
 	
-		printf("\nDeseja descobrir a quantidade de algorismos de mais algum número |S|-sim |N|-não:");
+		printf("\nDeseja descobrir a quantidade de algorismos de mais algum nÃºmero |S|-sim |N|-nÃ£o:");
 		scanf("%c", &opcao);
 		fflush(stdin);
 		
@@ -46,6 +46,6 @@ int main(){
 	
 	
 	
-	system("pause");
+    system("pause");
     return 0;	
 }
