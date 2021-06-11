@@ -1,6 +1,6 @@
-/*3. Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de até 10 pessoas. Fazer
-um programa que calcule e escreva: a maior e a menor altura do grupo; a média da altura das mulheres;
-o número de homens. Usar os três comandos de repetição na solução do problema.*/
+/*3. Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de atÃ© 10 pessoas. Fazer
+um programa que calcule e escreva: a maior e a menor altura do grupo; a mÃ©dia da altura das mulheres;
+o nÃºmero de homens. Usar os trÃªs comandos de repetiÃ§Ã£o na soluÃ§Ã£o do problema.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -15,11 +15,11 @@ int main(){
 	char sexo;	
 	
 	do{
-		printf("Quantas pessoas (Máximo 10) irão fazer a pesquisa:");
+		printf("Quantas pessoas (MÃ¡ximo 10) irÃ£o fazer a pesquisa:");
 		scanf("%d", &quantidadePessoas);
 		fflush(stdin);
 		if(quantidadePessoas<1 || quantidadePessoas>10)
-		printf("Digite um valor válido!\n");		
+		printf("Digite um valor vÃ¡lido!\n");		
 	}while(quantidadePessoas<1 || quantidadePessoas>10);
 		
 	for(contador=1; contador<=quantidadePessoas; contador++){	
@@ -29,7 +29,7 @@ int main(){
 		
 		sexo = toupper(sexo);
 		
-		printf("Digite a altura da pessoa %d, em centímetros:", contador);
+		printf("Digite a altura da pessoa %d, em centÃ­metros:", contador);
 		scanf("%d", &altura);
 		fflush(stdin);
 		
@@ -56,11 +56,11 @@ int main(){
 	
 	mediaAlturaMulher = alturaMulheres/mulheres;
 	
-	printf("A maior altura do grupo é %d centímetros.\n", maiorAltura);
-	printf("A menor altura do grupo é %d centímetros.\n", menorAltura);
-	printf("A média da altura das mulheres é %.1f.\n", mediaAlturaMulher);
-	printf("O número de homens nesse grupo é %d.\n", homens);
+	printf("A maior altura do grupo Ã© %d centÃ­metros.\n", maiorAltura);
+	printf("A menor altura do grupo Ã© %d centÃ­metros.\n", menorAltura);
+	printf("A mÃ©dia da altura das mulheres Ã© %.1f.\n", mediaAlturaMulher);
+	printf("O nÃºmero de homens nesse grupo Ã© %d.\n", homens);
 		
-	system("pause");
+    system("pause");
     return 0;
 }
