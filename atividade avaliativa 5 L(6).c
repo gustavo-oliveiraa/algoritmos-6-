@@ -27,7 +27,7 @@ int main(){
 	printf("|===========================================================|\n");
 	
 	printf("|====================================================================================|\n");
-	printf("|O lucro máximo esperado é 1200 reais, para 120 ingressos vendidos por 15 reais cada.|\n");
+	printf("|O lucro máximo esperado é de $1200,00 para 120 ingressos vendidos por 15 reais cada.|\n");
 	printf("|====================================================================================|\n");	
 	
 	
